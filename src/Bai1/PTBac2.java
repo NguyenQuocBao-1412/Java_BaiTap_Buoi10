@@ -47,11 +47,11 @@ public class PTBac2 {
             System.out.println("Chương trình vô nghiệm!");
         }
         else if(delta == 0) {
-            System.out.println("Phương trình có nghiệm kép = " + (-this.b / 2 * this.a));
+            System.out.println("Phương trình có nghiệm kép = " + (-this.b / (2 * this.a)));
         }
         else {
-            x1 = (-b + Math.sqrt(delta) / 2 * this.a);
-            x2 = (-b - Math.sqrt(delta) / 2 * this.a);
+            x1 = ((-this.b + Math.sqrt(delta)) / (2 * this.a));
+            x2 = ((-this.b - Math.sqrt(delta)) / (2 * this.a));
             System.out.println("Phương trình có 2 nghiệm x1 = " + x1 + ", x2 = " + x2);
         }
     }
